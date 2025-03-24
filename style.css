@@ -3,55 +3,70 @@
     padding: 0%;
     box-sizing: border-box;
 }
-#head1{
-    height: 10vmin;
-    background-color:#8F87F1;
-   width: 100%;
-     
-}
+
 body{
     background: linear-gradient(to right,#161179,#0C0950);
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    align-content: space-between;
-    padding-top: 2vmin;
 
+header {
+    background-color: #2D336B; /* Background color for the navbar */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#portfolio{
-   
-    height: 4vh;
-    background-color: aquamarine;
-    border-radius: 5px;
-    border: 2px solid black;
-margin-left: 10px;
+
+.nav {
+    display: flex; /* Flexbox layout for nav items */
+    justify-content: space-between; /* Spreads items horizontally */
+    align-items: center; /* Vertical alignment in the center */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
 }
-#nav2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 60%;
-  
-    
+
+#portfolio {
+    font-size: 2rem; /* Increases size of "PORTFOLIO" */
+    color: white;
+    margin: 0;
 }
-#nav2 a:hover{
-    border: 2px solid rgb(255, 255, 255);
+
+#nav2 {
+    display: flex; /* Align links horizontally */
+    gap: 15px; /* Spacing between links */
+    flex-wrap: wrap; /* Wrap links when the screen gets smaller */
 }
-#nav2 a{
-    height: 4.5vmin;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 10px;
+
+.navlink {
+    color: white; /* Text color */
     text-decoration: none;
-    background-color: #161179;
-    color: aliceblue;
-   
+    padding: 8px 15px; /* Padding for each link */
+    border: 1px solid white; /* Border around links */
+    border-radius: 5px; /* Optional: Rounded corners */
+    font-size: 1rem; /* Adjust size for readability */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.navlink:hover {
+    background-color: white; /* Background changes on hover */
+    color: #2D336B; /* Text color changes on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stacks items vertically on small screens */
+        align-items: flex-start;
+    }
+
+    #nav2 {
+        width: 100%; /* Nav links take full width */
+        justify-content: space-around; /* Adjust links across width */
+    }
+
+    .navlink {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        text-align: center;
+        width: auto; /* Links adjust size based on content */
+    }
+}
+
 .aboutbox{
     border-radius: 15px;
     background-color: #221abc;
