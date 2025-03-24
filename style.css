@@ -1,0 +1,243 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#head1{
+    height: 10vmin;
+    background-color:#8F87F1;
+   width: 100%;
+     
+}
+body{
+    background: linear-gradient(to right,#161179,#0C0950);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    align-content: space-between;
+    padding-top: 2vmin;
+
+}
+#portfolio{
+   
+    height: 4vh;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: 2px solid black;
+margin-left: 10px;
+}
+#nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+  
+    
+}
+#nav2 a:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+#nav2 a{
+    height: 4.5vmin;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #161179;
+    color: aliceblue;
+   
+}
+.aboutbox{
+    border-radius: 15px;
+    background-color: #221abc;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin-top: 10vmin ;
+    margin-left: 10vmin;
+}
+.about{
+   
+    padding: 2vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.content{
+    width: 50%;
+
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 4vmin;
+    padding: auto;
+}
+.texts h3{
+    color: rgb(17, 83, 250);
+    font-size: 6vmin;
+
+}
+.texts p{
+    color: #ffffff;
+    text-shadow: 1px 1px 1px red;
+}
+.about h1,p, h2{
+    color: #ffffff;
+    margin-left: 10vmin;
+}
+#profile{
+    border-radius: 50%;
+    height: 30vmin;
+    box-shadow: 2px 2px 2px black;
+    border: 5px solid rgb(255, 255, 255);
+}
+.social1 a{
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+.social1 img{
+    height: 5vmin;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    border-radius: 50%;
+
+}
+.social1 img:hover{
+  box-shadow: 2px 2px 9px whitesmoke;
+    border: 2px solid whitesmoke;
+}
+.maindiv{
+    display: flex;
+    justify-content: space-evenly;
+   justify-items: center;
+
+}
+.box11 p{
+    height: 5vmin;
+    width: 15vmin;
+   margin-top: 10px;
+   display: grid;
+   align-items: center;
+   text-align: center;
+   border-radius: 10px;
+    border: 1px solid white;
+}
+.box13 p{
+    height: 5vmin;
+    width: 30vmin;
+   margin-top: 10px;
+   display: grid;
+   align-items: center;
+   text-align: center;
+   border-radius: 10px;
+    border: 1px solid white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light background for the page */
+}
+
+.form {
+    max-width: 500px; /* Sets max width for the form container */
+    margin: 20px auto; /* Centers the form on the page */
+    padding: 20px;
+    background-color: rgba(9, 17, 88, 0.722);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+form label {
+    display: block; /* Ensures labels and inputs are on new lines */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formbox {
+    width: 100%; /* Makes input fields full-width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+label{
+    color: #f1f1f1;
+}
+.formbox:focus {
+    border-color: #2D336B; /* Highlight border on focus */
+    background-color: #f0f8ff; /* Light blue background on focus */
+}
+
+.submit {
+    width: 100%; /* Full-width button */
+    padding: 10px;
+    background-color: #2D336B;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #1f295a; /* Darker shade on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .formbox, .submit {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .formbox {
+        font-size: 12px;
+    }
+
+    .submit {
+        font-size: 16px;
+    }
+}
+footer {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100px; /* Set a height for the footer */
+    background-color: #2D336B; /* Optional: Background color */
+    color: white; /* Optional: Text color */
+    padding: 10px; /* Adds spacing inside the footer */
+}
+
+.copy {
+    text-align: center; /* Ensures text stays centered inside the container */
+}
+
+#copy {
+    font-size: 16px; 
+    font-weight: bold; 
+}
